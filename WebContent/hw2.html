@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Online Pizza ordering form</title>
+</head>
+<body>
+<header>온라인 피자 주문 폼</header>
+<article>
+1.아래와 같은 폼을 작성
+<form border="1" action="hw2a.jsp" target="board" method="get">
+		고객명 : <input type="text" name ="name"><br>
+		전화번호: <input type="tel" pattern="010-\d{4}-\d{4}" placeholder="010-xxxx-xxxx" name="tel"><br>
+		E-mail: <input type="email" name="email"><br>
+	<fieldset>
+	<legend>피자사이즈</legend>
+	<ul>
+	<li><input type="radio" name ="size" value="small">Small
+	<li><input type="radio" name ="size" value="medium">Medium
+	<li><input type="radio" name ="size" value="large">Large
+	</ul>
+	</fieldset>
+	<fieldset>
+	<legend>토핑 선택</legend>
+	<ul>
+	<li><input type="checkbox" name="topping" value="bacon">베이컨
+	<li><input type="checkbox" name="topping" value="cheeze">치즈
+	<li><input type="checkbox" name="topping" value="onion">양파
+	<li><input type="checkbox" name="topping" value="mushroom">버섯
+	</ul>
+	</fieldset>
+	희망배송시간: <input type="time"name="a_time" min="10:00" max="22:00"><br>
+	배송시 요청사항: <textarea rows="2" cols="50"name="txt"></textarea><br>
+	<button>주문하기</button>
+</form>
+<iframe name="board" border="0" width="200" height="200"></iframe>
+</article>
+</body>
+</html>

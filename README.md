@@ -9,7 +9,8 @@ HTML5 태그에는 4와 비교해서 style sheet 관련 태그 사용에 주의�
  1. frame(폐기됨)
  2. ifram
  3. ajax
- **시멘틱 태그 구조**
+ <br />
+ **시멘틱 태그 구조**<br />
  header 사이트에 대한 소개정보나 로고 등이 포함됨
  Nav 메뉴, 링크와 같은 네비게이션 요소들이 포함
  Section 실제 페이지의 내용이 들어가는곳으로 section 안에 또 다른 section을 삽입할 수 있음

@@ -5,6 +5,19 @@
 <title>Insert title here</title>
 </head>
 <body>
-
+	<form action="my.jsp"method="get" target="myi">
+		이름:<input type="text" name="myname"required autofocus="autofocus"><br> 나이:<input
+			type="number" min="0" name="age"><br>
+			<input type="radio"name ="gender" value="male" checked>남성
+			<input type="radio"name="gender" value="female">여성<br>
+			이메일:<input type="email" name ="email"placeholder="xxx@xxx.xx형식" autocomplete="on"><br>
+			생일: <input type="date" name="b_day"><br>
+			색상: <input type="color"><br>
+			범위: <input type="range"min="0"max="10" step="2"><br>
+			url: <input type="url"placeholder="http://형식으로"><br>
+			<input type="submit">
+	</form>
+	
+	<iframe name="myi"frameborder="0" width="300" height="300"></iframe>
 </body>
 </html>
