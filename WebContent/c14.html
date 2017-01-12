@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style>
+div:not(:empty) { /*empty자체가 수도이기 때문에 :을 붙임*/
+   width: 100px;
+   height: 100px;
+   background-color: yellow;
+}
+
+li:not(:FIRST-CHILD) {
+   color: blue;
+}
+</style>
+</head>
+<body>
+   <ul>
+      <li>항목1</li>
+      <li>항목2</li>
+      <li>항목3</li>
+      <li>항목4</li>
+   </ul>
+   <div></div>
+   <div>테스트1</div>
+   <div>테스트2</div>
+
+</body>
+</html>

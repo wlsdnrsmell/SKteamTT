@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+[type="checkbox"]:CHECKED {
+	width: 30px;
+	height: 30px
+}
+
+[name="grade"]:CHECKED {
+	width: 50px;
+	height: 50px;
+}
+
+[type="text"]:DISABLED {
+	background-color: gray;
+}
+
+[type="text"]:ENABLED {
+	background-color: yellow;
+}
+</style>
+</head>
+<body>
+
+	<fieldset>
+		<legend>
+			<input name="grade" type="radio">1학년 <input name="grade"
+				type="radio">2학년 <input name="grade" type="radio">3학년
+		</legend>
+	</fieldset>
+	<input id="my" type="checkbox">여자
+	<input id="my2" type="checkbox">남자
+	<br>
+	<input id="test1" type="text">
+	<br>
+	<input id="test2" disabled type="text">
+</body>
+</html>

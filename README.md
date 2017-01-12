@@ -20,3 +20,23 @@ HTML5 태그에는 4와 비교해서 style sheet 관련 태그 사용에 주의�
  
  문서 헤더가 많다면 <hgroup>에 묶음
 보충 사진 넣을 떄는 <figure> 사진 설명은 <figcaption>사용
+
+# 3일차 공부
+**CSS3의 문법 **
+      p         {background-color:yellow;}<br />
+선택자(selector)  {속성property      :값(value);}<br />
+
+인라인(head)<br />
+
+임베디드(tag 내에)<br />
+
+외부스타일(파일.css)<br />
+
+아이디선택자 &#test <br />
+class 선택자 .test
+속성 선택자 [test]
+**블락요소만 text-align 먹는다, 인라인 요소는 한줄을 다 할당받은것이 아니고 문자부분만 할당받았으므로**
+
+after속성은 반드시 콘텐츠 속성이랑 같이 써야한다.<br />
+
+first-child, first-of-type, nth-of-type(2n)

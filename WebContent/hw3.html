@@ -3,11 +3,27 @@
 <head>
 <meta charset="UTF-8">
 <title>나소개</title>
+<style>
+	p:FIRST-LINE {
+	background-color: yellow;
+}
+p:FIRST-LETTER {
+	font-size: 50px;
+	font-family: "궁서체";
+}
+#table tr:NTH-OF-TYPE(2n) {
+	background-color: yellow;
+}
+#table tr:hover{
+	background-color: red;
+	color: purple;
+}
+</style>
 </head>
 <body>
 	<header><h1>My Homepage</h1></header>
 	<article>
-		<img src="image/kk.jpg"><strong>컴퓨터 프로그래머</strong>를 꿈구며 열심히 공부하고 있는 1인입니다.
+		<img src="image/kk.jpg"><strong><p>컴퓨터 프로그래머</strong>를 꿈구며 열심히 공부하고 있는 1인입니다.</p>
 		<br>
 		<h2>현재 학습하고 있는 과목</h2>
 		<ul>
@@ -18,7 +34,7 @@
 		</ul>
 		<h2>이번학기 시간표</h2>
 		
-		<table border="1">
+		<table border="1" id="table">
 		<caption>시간표</caption>
 			<tr>
 				<td></td>

@@ -3,6 +3,22 @@
 <head>
 <meta charset="UTF-8">
 <title>Online Pizza ordering form</title>
+<style>
+	input:focus{
+		background-color: green;
+	}
+	[name="size"]:CHECKED{
+		width:"30px";
+		height :"30px";
+	}
+	[name="topping"]:CHECKED{
+		width:"30px";
+		height :"30px";
+	}
+	#topping>li:NTH-OF-TYPE(2n) {
+	color:red;
+}
+</style>
 </head>
 <body>
 <header>온라인 피자 주문 폼</header>
@@ -22,7 +38,7 @@
 	</fieldset>
 	<fieldset>
 	<legend>토핑 선택</legend>
-	<ul>
+	<ul id="topping">
 	<li><input type="checkbox" name="topping" value="bacon">베이컨
 	<li><input type="checkbox" name="topping" value="cheeze">치즈
 	<li><input type="checkbox" name="topping" value="onion">양파

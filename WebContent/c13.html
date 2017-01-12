@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	input:required{
+		background-color: yellow;
+	}
+	input:-webkit-readonly{
+		background-color: black;
+	}
+</style>
+</head>
+<body>
+	<form>
+		이름: <input type="text" required><br>
+		나이: <input type="number"><br>
+		생일: <input type="date"readonly value="1999-10-22">
+		<button>확인</button>
+	</form>
+</body>
+</html>
