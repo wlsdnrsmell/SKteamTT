@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+@font-face {
+	font-family: "나의글꼴";
+	src: url("font/NANUMGOTHIC.TTF")
+}
+div{
+	width:700px;
+	height:300px;
+	margin:auto;
+}
+
+table{
+	border-collapse: collapse;
+	width: 100%;
+	color : black;
+}
+tr:FIRST-CHILD{
+	background-color: gray;
+}
+tr:NTH-CHILD(3n){
+	background-color: gray;
+}
+tr:NTH-CHILD(2n){
+	background-color: aqua;
+}
+table, tr, td {
+	border: solid 1px black;
+	font-family: "나의글꼴";
+}
+
+th {
+	width: 20px;
+	font-weight: 700;
+	font-size: 20px;
+	height: 40px;
+}
+
+td {
+	text-align: center;
+	height: 40px;
+	vertical-align: middle;
+}
+
+#tr1 {
+	border-bottom-style: groove;
+	border-bottom-color: black;
+	border-bottom-size:2px;
+	border-top: 2px solid black;
+	border-top-left-radius: 100px;
+	border-top-right-radius: 100px;
+}
+#tr2,#tr3 {
+	border-bottom: 2px 	solid blue;
+}
+caption{
+	font-size:40px;
+	text-shadow: 5px 5px 5px blue;
+}
+</style>
+</head>
+<body>
+	<div>
+		<table>
+			<caption>신상정보</caption>
+			<tr id="tr1">
+				<th>이름</th>
+				<th>이메일</th>
+			</tr>
+			<tr id="tr2">
+				<td>김철수</td>
+				<td>chul@google.com</td>
+			</tr>
+			<tr id= "tr3">
+				<td>김영희</td>
+				<td>yong@google.com</td>
+			</tr>
+		</table>
+	</div>
+</body>
+</html>

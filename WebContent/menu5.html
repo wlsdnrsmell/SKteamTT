@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+body {
+	background-image: url("image/back.jpg");
+	background-size: 100%;
+}
+
+.container {
+	margin: auto;
+	width: 700px;
+	margin-top: 30px;
+}
+
+#profile_p {
+	width: 150px;
+	height: 200px;
+	background-image: url("image/park2.jpg");
+	background-size: 100%;
+	float: left;
+	border: 2px double black;
+	background-attachment: scroll;
+}
+
+#profile_p:HOVER {
+	zoom: 3.0;
+}
+
+#profile_l {
+	height: 200px;
+	padding-top: 5px;
+	padding-left: 10px;
+	vertical-align: auto;
+}
+
+#profile_l>p {
+	font-size: 20px;
+}
+
+#profile_t>table {
+	width: 100%;
+	text-align: center;
+	border-collapse: collapse;
+	box-sizing: 
+}
+
+table>caption {
+	font-size: 30px;
+	font-weight: bold;
+}
+
+#name {
+	text-decoration: none;
+}
+
+table, th, td {
+	border-bottom: 3px solid black;
+}
+
+table img {
+	width: 400px;
+	height: 200px;
+}
+
+#video {
+	text-align: center;
+	margin-top: 30px;
+}
+</style>
+</head>
+<body>
+	<div class="container">
+		<div id="profile_p"></div>
+		<div id="profile_l">
+			<p>
+				<strong>이름:</strong><a id="name"
+					href="https://search.naver.com/search.naver?where=nexearch&query=%EB%B0%95%EC%86%8C%EB%8B%B4&sm=top_hty&fbm=1&ie=utf8"
+					target="_blank"> 박소담</a>
+			</p>
+			<p>
+				<strong>생년월일:</strong> 1991.09.08
+			</p>
+			<p>
+				<strong>소속사:</strong> 카라멜이엔티
+			</p>
+			<p>
+				<strong>직업:</strong> 배우
+			</p>
+		</div>
+		<div id="profile_t">
+			<table>
+				<caption>활동내역</caption>
+				<tr>
+					<th>활동종류</th>
+					<th>포스터</th>
+					<th>작품명</th>
+					<th>활동연도</th>
+				</tr>
+				<tr>
+					<td>영화</td>
+					<td><img src="image/movie.jpg"></td>
+					<td><pre>베테랑(조연 클럽 여자)</pre></td>
+					<td>2015</td>
+				</tr>
+			</table>
+		</div>
+		<div id="video">
+			<iframe width="560" height="315"
+				src="https://www.youtube.com/embed/qstVniFF83U" frameborder="0"
+				allowfullscreen></iframe>
+		</div>
+	</div>
+</body>
+</html>

@@ -40,3 +40,18 @@ class 선택자 .test
 after속성은 반드시 콘텐츠 속성이랑 같이 써야한다.<br />
 
 first-child, first-of-type, nth-of-type(2n)
+
+# 4일차 공부
+**외부스타일시트**
+**내부스타일시트**
+**임베디드스타일시트**
+우선순위::
+
+
+**패딩** : 간격
+
+
+# 5일차 공부
+
+display - display:none <br />
+		- visibility:hidden<br />
