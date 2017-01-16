@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+.container {
+	width: 980px;
+	margin: auto;
+	border: 1px dotted black;
+}
+
+header {
+	border: 1px dotted black;
+	text-align: center;
+	font-family: fantasy;
+	width: 100%;
+}
+
+nav {
+	border-right: 3px double black;
+	float: left;
+	width: 18%;
+	text-decoration: none;
+	text-shadow: 1px 1px 1px black;
+	line-height: 4.0;
+	padding-top: 50px;
+}
+
+nav li {
+	list-style: none;
+}
+
+section {
+	float: right;
+	width: 80%;
+}
+
+footer {
+	clear: both;
+	width: 100%;
+	height: 30px;
+	background-color: lightgray;
+	color: white;
+	font-weight: bold;
+	font-size: 15px;
+	text-align: center;
+}
+
+div img {
+	display: none;	
+}
+
+img {
+	opacity: 1.0;
+	width: 300px;
+	float: left;
+	height: 200px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+
+
+@media screen and (max-width:1536px) {
+	.container {
+		width: 90%
+	}
+	@media screen and (max-width:750px) {
+		.container {
+			width: 80%
+		}
+		nav {
+			float: none;
+			width: auto;
+			height: auto;
+			border-right: none;
+			padding-top: 0px;
+		}
+		nav li {
+			display: inline;
+			margin-left: 10pxf;
+			font-size: 15px;
+		}
+		section {
+			width: 100%;
+		}
+		img {
+			width: 90%;
+		}
+	}
+}
+</style>
+</head>
+<body>
+	<div class="container">
+		<header>
+			<h1>유럽여행을가자</h1>
+		</header>
+		<nav>
+			<ul>
+				<li><a href="prague.html" target="myframe">프라하</a></li>
+				<li><a
+					href="london.html"
+					target="myframe">런던</a></li>
+				<li><a
+					href="florence.html"
+					target="myframe">피렌체</a></li>
+			</ul>
+		</nav>
+		<section>
+			<article>
+				<iframe name="myframe" frameborder="0" width="100%" height="700px"></iframe> 
+			</article>
+		</section>
+		<footer>
+			<p>&copy;copyright by Jinwook Im</p>
+		</footer>
+	</div>
+</body>
+</html>

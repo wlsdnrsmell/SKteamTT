@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+.container{
+	width:100%;
+	margin:auto;
+}
+img {
+	opacity: 1.0;
+	width: 300px;
+	float: left;
+	height: 200px;
+	padding-top: 10px;
+	padding-left: 10px;
+	animation: myani 2s;
+	animation-iteration-count: infinite;
+}
+     @keyframes myani
+        {
+            0%   {transform:rotate(30deg);} 
+            15%   {transform:rotate(60deg);} 
+            30%   {transform:rotate(90deg);} 
+            35%   {transform:rotate(120deg);}
+            40%   {transform:rotate(150deg);} 
+            55%   {transform:rotate(180deg);} 
+            60%   {transform:rotate(210deg);} 
+            75%   {transform:rotate(240deg);} 
+            80%   {transform:rotate(270deg);} 
+            85%   {transform:rotate(300deg);} 
+            90%   {transform:rotate(330deg);} 
+            95%   {transform:rotate(360deg);}   
+        }
+@media screen and (max-width:1536px) {
+	.container {
+		width: 90%
+	}
+	@media screen and (max-width:750px) {
+		.container {
+			width: 80%
+		}
+		nav {
+			float: none;
+			width: auto;
+			height: auto;
+			border-right: none;
+			padding-top: 0px;
+		}
+		nav li {
+			display: inline;
+			margin-left: 10px;
+		}
+		section {
+			width: 100%;
+		}
+		img {
+			width: 90%;
+		}
+	}
+}
+</style>
+</head>
+<body>
+	<div class="container">
+		<div id="prague">
+			<img src="photo/f1.jpg"> <img src="photo/f2.jpg"> <img
+				src="photo/f3.JPG"><img src="photo/f4.jpg">
+		</div>
+	</div>
+</body>
+</html>

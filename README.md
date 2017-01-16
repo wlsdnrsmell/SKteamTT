@@ -55,3 +55,32 @@ first-child, first-of-type, nth-of-type(2n)
 
 display - display:none <br />
 		- visibility:hidden<br />
+		
+float: //제거 : clear:left or right or both<br />
+
+**반응형 웹때문에 페이지 레이아웃을 테이블로 잡지 않는다.**
+**display와 float를 이용하여 구성**
+			"header"
+"nav"(float:left)	"content"(float:rignt)
+			"footer"(clear)
+			
+			
+# 6일차 공부
+**변수명 명명규칙**
+0~9(시작 x)<br />
+a-z<br />
+A-Z<br />
+$, 한글도 가능<br />
+
+데이터타입:<br />
+0. 불리언타입:True, False
+1. 정수 :  ...-2-1////<br />
+2. 실수<br />
+3. 문자열<br />
+4.함수타입:<br />
+4-1. 변수명 = function(인자){구문}(익명)<br />
+4-2. function 변수명(인자..){구문...}<br />
+5. 객체타입<br />
+5-1.변수명={키:값, 키:값,...}<br />
+5-2. 변수명 = [...]<br />
+5-3.프로토타입<br />

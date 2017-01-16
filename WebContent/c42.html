@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+div {
+	position: relative; width : 100px;
+	height: 100px;
+	background-color: yellow;
+	width: 100px;
+}
+
+div:HOVER {
+animation:balls 2s ease;
+animation-iteration-count:infinite;
+/*animation-direction:alternate-reverse;*/
+/*
+	animation-name: myani1;
+	animation-duration: 3s;
+	animation-timing-function:ease;
+	animation-iteration-count:infinite;*/
+}
+@keyframes myani2{
+	0%{bottom:0px}/*from에 해당*/
+	50%{bottom:20px; background-color:red;}
+	100%{bottom:200px; background-color:pink;}
+	75%{left:0px; top:726px; background-color:blue;}
+	100%{left:0px; top:0px; background-color:yellow;} /*to 에 해당*/
+}
+@keyframes balls{
+	from, to{
+	bottom: 0px;
+	}
+	50%{
+	bottom: 200px;
+	}
+}
+@keyframes myani {from { left:0px;
+	
+}
+
+to {
+	left: 300px;
+}
+
+}
+@keyframes myani1 {from { top:0px;
+	
+}
+
+to {
+	top: 500px;
+}
+}
+</style>
+</head>
+<body>
+	<div>테스트</div>
+</body>
+</html>

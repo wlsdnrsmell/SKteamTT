@@ -1,0 +1,50 @@
+<html>
+<head>
+<style>
+#wrap {
+	margin: auto;
+}
+
+div {
+	width: 200px;
+	height: 100px;
+	background-color: yellow;
+	font-weight: bold;
+	text-align: center;
+	display: table-cell;
+	vertical-align: middle;
+	font-size: 30px;
+}
+
+@media screen and (max-width:980px) {
+	div {
+		background-color: blue;
+		font-family: "굴림";
+		color: red;
+	}
+}
+
+@media screen and (max-width:700px) {
+	div {
+		background-color: red;
+		font-family: "나눔";
+		color: blue;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	div {
+		background-color: green;
+		font-family: "굴림";
+		color: white;
+	}
+}
+</style>
+<body>
+	<div id="wrap">
+		<div>
+			<p>대한민국</p>
+		</div>
+	</div>
+</body>
+</html>

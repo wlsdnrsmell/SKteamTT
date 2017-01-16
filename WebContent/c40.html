@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+div {
+	background-color: yellow;
+	width: 100px;
+	height: 100px;
+	-webkit-transition: width 2s, height 5s;
+	/*
+	-webkit-transition-property:width, height;
+	-webkit-transition-duration:2s;
+	-o-transition-property:width;
+	-moz-transition-property:width;
+	transition-property: width;*/
+}
+
+div:HOVER {
+	background-color: green; width : 200px;
+	height: 200px;
+	width: 200px;
+}
+img{
+	opacity:0;
+	-webkit-transition-duration:2s;
+	-webkit-transition:opacity,2s;
+}
+img:HOVER {
+	opacity: 1.0;
+}
+</style>
+</head>
+<body>
+	<div>대한민국</div>
+	<img src="image/park.jpg">
+</body>
+</html>
