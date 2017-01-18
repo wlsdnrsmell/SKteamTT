@@ -90,11 +90,12 @@ $, 한글도 가능<br />
 # 7일차 공부
 DOM 객체가 만들어지기 전에 적용되서 에러 발생 <br />
 방지 object화 시켜줘야함<br />
-[code language = "HTML"]
-<body <b>onload</b>="init()">
-[/code]
-[code language = "javascript"]
-<script>
-function init(){}
-</scipt>
-[/code]
+	
+	<p><code>
+		<body onload="init()">
+	</code></P>
+	<p><code>
+		<script>
+			function init(){}
+		</scipt>
+	</code></p>
