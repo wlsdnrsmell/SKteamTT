@@ -37,6 +37,8 @@ class 선택자 .test
 속성 선택자 [test]
 **블락요소만 text-align 먹는다, 인라인 요소는 한줄을 다 할당받은것이 아니고 문자부분만 할당받았으므로**
 
+vertical-align:middle - display : table-cell 같이 써야함<br />
+
 after속성은 반드시 콘텐츠 속성이랑 같이 써야한다.<br />
 
 first-child, first-of-type, nth-of-type(2n)
@@ -84,3 +86,15 @@ $, 한글도 가능<br />
 5-1.변수명={키:값, 키:값,...}<br />
 5-2. 변수명 = [...]<br />
 5-3.프로토타입<br />
+
+# 7일차 공부
+DOM 객체가 만들어지기 전에 적용되서 에러 발생 <br />
+방지 object화 시켜줘야함<br />
+[code language = "HTML"]
+<body <b>onload</b>="init()">
+[/code]
+[code language = "javascript"]
+<script>
+function init(){}
+</scipt>
+[/code]
